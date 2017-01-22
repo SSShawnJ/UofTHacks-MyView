@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link href="{{ url_for('static', filename='index.css') }}"  rel="stylesheet" type="text/css">
+        <title>MyVoice</title>
+    </head>
+    <body>
+      <div class=main>
+      <div class=containers>
+      <h1>MyVoice</h1>
+    </div>
+        </div>
+      <h2>About</h2>
+    <div class=container>
+    <div class=picture>
+    <img src="http://www.ttcwetranslate.com/wp-content/uploads/2013/05/people-using-sign-language-web.jpg"  height="50%" align=top>
+    </div>
+    <div>
+    <p>
+      The idea for this project was born while brainstorming another possible project idea that solely uses the Amazon Echo, but the idea of an accessibility product seemed to be more meaningful. We chose to create a hand gesture to speech project to help the mute to communicate more freely. We put ourselves in the shoes of a person who is mute and thought of examples of interactions that may require speech to communicate efficiently. These scenarios expressed how essential and useful this project is for many people. We call our project MyVoice since it truly does give a person a voice that uses a person’s hand instead of their mouth. MyVoice can translate simple hand gestures to speech in order communicate with another person. We are using a Leap Motion sensor to track the hand gestures and the Amazon Echo to speak with a voice loud enough to be heard outside an average room. We are not using American Sign Language (ASL) as our input gestures as it would take greater time and experience to make. It also was an issue for us to use ASL as some of the signs involve touching the face to express some words. This would require the use of additional API’s and adding additional time to the project timeline.
+    </p>
+    </div>
+    </div>
+      <div class=video>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/du1fHo8R-w0" frameborder="0" allowfullscreen></iframe>
+     <div class=container2>
+    <div class=picture2>
+    <img src="{{url_for('static', filename='Leap_Axes.png')}}" align=center>
+    </div>
+<div class=words2>
+      <h3>Gestures</h3>
+    <ul>
+      <li>Hello (Right, Up)</li>
+      <li>Bye (Left, Up)</li>
+      <li>Exit (Down, Right)</li>
+      <li>Yes (Up, Down)</li>
+      <li>No (Left, Right)</li>
+      <li>Thank You (Up, Left)</li>
+      <li>Sorry (Down, Left)</li>
+    </ul>
+    </div>
+    </div>
+  <h4>How it works</h4>
+    <p id="p3">We have a python script that tracks and reads the hand gestures and if the correct hand gesture is made it will trigger a statement telling the text to speech api to spit out the words through the amazon echo. It is very easy to use and the gestures are easy to learn too as they consists of only up, down, left, and right movements.
+</p> 
+  <div class=qqq>
+  <p id="p4">
+  The MyVoice project is very beneficial to those who are unable to speak and would like to communicate with those who do not understand sign language and those who are visually impaired. MyVoice accomplishes this and more with ease. MyVoice can aid in tasks that used very difficult without such an excellent innovation. A task such as talking to someone on the phone is nearly impossible for some and with MyVoice you will be able to call someone and talk a person that is out of visual sight. Imagine being able to talk with 911-emergency with the motion of hand. It also allows the user to request someone for assistance without having that person’s visual attention. As long as the user has the Amazon Echo nearby, the user will be able to talk to almost anyone without feeling misunderstood. Another benefit of this fantastic product is that it will make the user have feeling of being free to express themselves and communicate without having a translator wandering with them. Lastly, MyVoice gives a person a voice and with that voice, the person will no longer be pitied by others. </p>
+  <img id=img3 src="http://printcart.com/blog/wp-content/uploads/2015/09/benefits_shutterstock_180805151.jpg">>
+  </div>
+  <div class=plan>
+  <ul id="day1"  style="float: left; position: relative; width: 200px;">Day1
+    <li>2 hours to come up with idea</li>
+    <li>Gather tools required </li>
+    <li>Watch videos to understand how to use tools</li>
+    <li>Start the coding</li>
+  </ul>
+
+    <ul id="day2"  style="float: left; position: relative; width: 200px;"">Day2
+    <li>Resolve any issues from previous day</li>
+    <li>Continue coding and resolving issues as they arise </li>
+    <li>Start documentation</li>
+    <li>Start website to showcase the product</li>
+    <li>Test run all functions and make improvements</li>
+  </ul>
+
+    <ul id="day3"  style="float: left; position: relative; width: 200px;"">Day3
+    <li>Touch up small details</li>
+    <li>Submit project before 10 AM </li>
+    <br/><br/><br/><br/>
+  </ul>
+
+  <ul id="future"><b>The Future Plan</b> <br/>
+  The next phase for this project is to replace our very own “SpeakEasy” gestures and implement gestures from the American Sign Language dictionary. This will increase the amount of people the user be able to communicate with since the user will be able to communicate to those who are visually impaired using the audible speech feature, those who audibly impaired using ASL gestures given and also those that are not familiar with ASL simultaneously. To make it a more capable product, we will be making it compatible with any Bluetooth speakers in the market. </ul>
+  </div>
+<p id=cr>© 2017, Vision, Inc.
+</p>
+    </body>
+</html>
