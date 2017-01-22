@@ -15,11 +15,12 @@ h2{
 }
 h3{
   font-family:Cursive;
+}
+
+#link{
   color: white;
 }
-a{
-  color: white;
-}
+
 .containers {
   max-width: 940px;
   margin: 0 auto;
