@@ -55,19 +55,19 @@ def main():
 			
 		
 		
-		if motionSinceLastFrame.x >20.0 and canmove:
+		if motionSinceLastFrame.x >8.0 and canmove:
 			cRightMove+=1
 		else:
 			cRightMove=0
-		if motionSinceLastFrame.x <-20.0 and canmove:
+		if motionSinceLastFrame.x <-8.0 and canmove:
 			cLeftMove+=1
 		else:
 			cLeftMove=0
-		if motionSinceLastFrame.y >20.0 and canmove:
+		if motionSinceLastFrame.y >8.0 and canmove:
 			cUpMove+=1
 		else:
 			cUpMove=0
-		if motionSinceLastFrame.y <-20.0 and canmove:
+		if motionSinceLastFrame.y <-8.0 and canmove:
 			cDownMove+=1
 		else:
 			cDownMove=0
